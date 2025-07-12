@@ -9,9 +9,9 @@ import csv
 # import os
 from datetime import datetime
 # Download NLTK resources (run once)
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 # Load embedding model
 model = SentenceTransformer('all-MiniLM-L6-v2')
