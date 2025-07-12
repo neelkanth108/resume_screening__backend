@@ -2,8 +2,14 @@ python-dotenv
 fastapi
 uvicorn
 python-multipart
-
 pdfplumber
+python-docx
+pyresparser
+nltk
+sentence-transformers
+torch
+spacy
+
 sqlalchemy 
 aiosqlite 
 databases
