@@ -1,0 +1,11 @@
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+
+
+sqlalchemy 
+aiosqlite 
+databases
+
+firebase-admin
