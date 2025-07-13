@@ -235,9 +235,16 @@ async def delete_job(job_id: int, db: AsyncSession = Depends(get_db)):
     await db.delete(job)
     await db.commit()
     return {"message": "Job deleted"}
-
-
-
+    
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    import os
+
+    port = int(os.environ.get("PORT", 8000))  # default to 8000 if PORT not set
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
+
+
+
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
